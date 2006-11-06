@@ -8,6 +8,7 @@
 %define	pdir	Net
 %define	pnam	DNSBL-MultiDaemon
 Summary:	Net::DNSBL::MultiDaemon - multi DNSBL prioritization
+Summary(pl):	Net::DNSBL::MultiDaemon - obs³uga wielu DNSBL z priorytetami
 Name:		perl-Net-DNSBL-MultiDaemon
 Version:	0.18
 Release:	0.1
@@ -19,10 +20,10 @@ URL:		http://search.cpan.org/dist/Net-DNSBL-MultiDaemon/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(Geo::IP::PurePerl) >= 1.1
-BuildRequires:	perl(NetAddr::IP::Lite) >= 0.02
+BuildRequires:	perl-Geo-IP-PurePerl >= 1.1
 BuildRequires:	perl-Net-DNS-Codes >= 0.08
 BuildRequires:	perl-Net-DNS-ToolKit >= 0.24
+BuildRequires:	perl-NetAddr-IP-Lite >= 0.02
 BuildRequires:	perl-Unix-Syslog >= 0.97
 %endif
 BuildArch:	noarch
@@ -39,6 +40,18 @@ multi_dnsbl shares a common configuration file format with the
 Mail::SpamCannibal sc_BLcheck.pl script so that DNSBL's can be
 maintained in a common configuration file for an entire mail
 installation.
+
+%description -l pl
+Net::DNSBL::MultiDaemon to modu³ Perla implementujacy demona
+multi_dnsbl.
+
+multi_dnsbl to demon emuluj±cy DNS zwiêkszaj±cy wydajno¶æ wyszukiwañ
+DNSBL w systemach pocztowych. multi_dnsbl mo¿e byæ u¿ywany jako
+samodzielny DNSBL lub jako wtyczka dla standardowej instalacji BIND-a
+9. multi_dnsbl wspó³dzieli format pliku konfiguracyjnego ze skryptem
+sc_BLcheck.pl z pakietu Mail::SpamCannibal, wiêc DNSBL-e mog± byæ
+zarz±dzane z poziomu tego samego pliku konfiguracyjnego, co ca³y
+system pocztowy.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
