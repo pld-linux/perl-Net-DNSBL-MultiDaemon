@@ -8,7 +8,7 @@
 %define	pdir	Net
 %define	pnam	DNSBL-MultiDaemon
 Summary:	Net::DNSBL::MultiDaemon - multi DNSBL prioritization
-Summary(pl.UTF-8):   Net::DNSBL::MultiDaemon - obsługa wielu DNSBL z priorytetami
+Summary(pl.UTF-8):	Net::DNSBL::MultiDaemon - obsługa wielu DNSBL z priorytetami
 Name:		perl-Net-DNSBL-MultiDaemon
 Version:	0.18
 Release:	0.1
