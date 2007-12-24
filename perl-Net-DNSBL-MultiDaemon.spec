@@ -10,12 +10,12 @@
 Summary:	Net::DNSBL::MultiDaemon - multi DNSBL prioritization
 Summary(pl.UTF-8):	Net::DNSBL::MultiDaemon - obsługa wielu DNSBL z priorytetami
 Name:		perl-Net-DNSBL-MultiDaemon
-Version:	0.18
+Version:	0.22
 Release:	0.1
 License:	GPL v2
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/M/MI/MIKER/Net-DNSBL-MultiDaemon-%{version}.tar.gz
-# Source0-md5:	7822d4c33316b164773d3c3f6d351cd4
+# Source0-md5:	5a70b7e41f90d9488ae7f1a6e7e8b3ec
 URL:		http://search.cpan.org/dist/Net-DNSBL-MultiDaemon/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
