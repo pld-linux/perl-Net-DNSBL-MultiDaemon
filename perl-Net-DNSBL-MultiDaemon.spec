@@ -4,7 +4,6 @@
 # Conditional build:
 %bcond_with	tests		# perform "make test" (uses DNS servers)
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	DNSBL-MultiDaemon
 Summary:	Net::DNSBL::MultiDaemon - multi DNSBL prioritization
